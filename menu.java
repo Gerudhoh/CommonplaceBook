@@ -363,12 +363,10 @@ public class Menu{
 		else if(menu == COURSE_EDITOR){
 			if(selection == 1){ //Add a course
 				Scanner sc = new Scanner(System.in);
-		
-                System.out.print("Please Input the course code: ");
-                toAddCode = (sc.nextLine());
-                        
-                System.out.print("Please Input the semester this will be taken: ");
-                toAddSemester = (sc.nextLine());
+               			 System.out.print("Please Input the course code: ");
+               			 toAddCode = (sc.nextLine());
+                		System.out.print("Please Input the semester this will be taken: ");
+                		toAddSemester = (sc.nextLine());
 				
 				if(catalog.findCourse((toAddCode)) != null){
 					usrPlan.addCourse(toAddCode, toAddSemester);
@@ -384,12 +382,10 @@ public class Menu{
 			}
 			else if(selection == 2){ //Update Status
 				Scanner sc = new Scanner(System.in);
-		
-                System.out.print("Please Input the course code: ");
-                toAddCode = (sc.nextLine());
-                        
-                System.out.print("Please Input the semester this will be taken: ");
-                toAddSemester = (sc.nextLine());
+              			System.out.print("Please Input the course code: ");
+                		toAddCode = (sc.nextLine());
+                		System.out.print("Please Input the semester this will be taken: ");
+               	 		toAddSemester = (sc.nextLine());
 				
 				System.out.println("Please Input the course Status:");
 				System.out.println("1. Planned");
